@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box;
+
+}
+body{
+
+    margin:0;
+    height: 100%;
+}
+    .kuch_bhi{
+        display: grid;
+        grid-template-areas:
+        'header',
+        'main'
+        'footer' ;
+
+        grid-template-rows: 50px 1fr 50px;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    header{
+        grid-area: 'header' ;
+        background-color: red;
+        color: beige;
+        font-size: 25px;
+        text-align:center ;
+        
+
+    }
+    main{
+        grid-area:'main';
+        background-color: white;
+        color: black;
+        font-size:15px ;
+        text-align:center ;
+    }
+    footer{
+
+        grid-area:'footer' ;
+        background-color: rgb(75, 81, 91);
+        color: black;
+        font-size:15px;
+        text-align: center;
+        
+    }
